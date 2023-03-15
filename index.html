@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>own games simple website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bootstrap -->
+  <link href="assets/css/canvas.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- for event listener  -->
+  <script src="assets/js/game.js"></script>
+  <link rel="apple-touch-icon" sizes="128x128" href="assets/images/heart.png">
+</head>
+
+<body>
+
+  <div id="modals_button_div">
+    <div id="sounds_modal">sounds</div>
+    <div id="modal" class="modal">
+        <table class="tabb">
+          <tr>
+            <td class="sounds" id="sound_bg">background</td>
+            <td class="sounds" id="sound_sexy">sexy</td>
+            <td class="sounds" id="sound_porn">sexy_dare</td>
+            <td class="sounds" id="stop_music">stop music</td>
+          </tr>
+        </table>
+        <div id="modal_off_div">
+          PRESS TO GO BACK
+          <p id="ultimate_text"></br>
+        </div>
+    </div>
+    <div id="pp_plus">add 1pp point to other player</div>
+  </div>
+
+  <audio id="end_timer" src="assets/sounds/end_timer.mp3"></audio>
+  <audio id="bg_sound" src="assets/sounds/bg_sounds.mp3"></audio>
+  <audio id="porn_sound" src="assets/sounds/porn_sounds.mp3"></audio>
+  <audio id="sexy_sound" src="assets/sounds/sexy_sounds.mp3"></audio>
+  <audio id="click_sound" src="assets/sounds/click.mp3"></audio>
+
+  <table class="tabb" id="difficulty_table">
+    <tr>
+      <td class="difficulty active_difficulty" id="soft"></td>
+      <td class="difficulty" id="medium"></td>
+      <td class="difficulty" id="hard"></td>
+      <td class="difficulty" id="extreme"></td>
+    </tr>
+  </table>
+
+  <table class="tabb">
+    <tr>
+      <td class="category active_category" id="random"> joker </td>
+      <td class="category" id="kiss_hug">1</td>
+      <td class="category" id="stripper">2</td>
+      <td class="category" id="promise">3</td>
+      <td class="category" id="tickle">4</td>
+      <td class="category" id="inspection">5</td>
+      <td class="category" id="roleplay">6</td>
+    </tr>
+    <tr>
+      <td class="category" id="blindfolded">7</td>
+      <td class="category" id="hand">8</td>
+      <td class="category" id="oral">9</td>
+      <td class="category" id="sextoy">10</td>
+      <td class="category" id="masturebate">11</td>
+      <td class="category" id="bdsm">12</td>
+      <td class="category" id="sex-position">13</td>
+    </tr>
+  </table>
+
+
+  <table id="button_and_timer" class="tabb">
+    <td class="butt_timer" id="button">male, 0pp: Get Dare</td>
+    <td class="butt_timer" id="use_pp">use 1 pp</td>
+    <td class="butt_timer" id="start_dare">start dare</td>
+    <td class="butt_timer" id="timer">Timer: 0s</td> <!--js for start timer-->
+  </table>
+
+  <H3 id="dare_text">click button to update dare</H3>
+
+</body>
+
+</html>
