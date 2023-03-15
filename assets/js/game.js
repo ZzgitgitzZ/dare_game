@@ -74,18 +74,15 @@ function get_dare(){
 
 function start_timer(max_time=1){
     if (max_time>0){
-        rr = 1+rand(4+1)
-        max_time = 15*rr + 2 + used_points*45
-        reps = 3*rr * (used_points+1)
+        rr = 1+rand(3+1)
+        max_time = 15*rr + used_points*45
+        reps = 3*rr*(used_points+1)
     } else{ 
         reps=0
     }
-    var old_time = new Date().getTime();            
+    var seconds = max_time;            
     var x = setInterval(function() {
-        var now_time = new Date().getTime();            
-        var distance = old_time - now_time;
-        var seconds = max_time + Math.floor((distance % (1000 * 60)) / 1000);
-            
+        seconds--    
         document.getElementById("timer").innerHTML = "Repetitions: " + reps +  " /\n Timer: " + seconds + "s";
         if (seconds < 0) {
             clearInterval(x);
