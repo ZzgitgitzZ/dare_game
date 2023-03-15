@@ -22,7 +22,7 @@ var pp_points = {"male":0, "female":0}
 var used_points = 0;
 
 function load_dares(){
-    url = 'https://zzgitgitzz.github.io/Dare_game/assets/text/dares.json'
+    url = 'https://zzgitgitzz.github.io/dare_game/assets/text/dares.json'
     var json = (function () {
         var json = null;
         $.ajax({
