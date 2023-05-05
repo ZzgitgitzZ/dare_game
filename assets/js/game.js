@@ -103,8 +103,10 @@ function start_timer(max_time=1){
 $(document).ready(function(){ //goes off after page first loaded 
     timer = start_timer(-1)
     song_elems = {'sound_bg':document.getElementById('bg_sound'), 'sound_sexy':document.getElementById('sexy_sound'), 'sound_porn':document.getElementById('porn_sound')};
-    ult_text = dares['ultimate']['extreme']
-    ult_text = ult_text.join('\n\n\n')
+    ult_text = "1==kiss_hug\n2==stripper\n3==promise\n4==tickle\n5==inspection\n6==roleplay\n7==blindfolded\n8==hand\n9==oral\n10==sextoy\n11==masturebate\n12==bdsm\n13==sex-position\n"
+    ult_text = ult_text + "repetitions / timer randomly between == [3,6,9] / [10s,20s,30s]\n"
+    ult_text = ult_text + "you press 'add 1 pp...' after finishing dare (if dare says so), can later use it on your next dare \n"
+    ult_text = ult_text + "1pp == 2x repetitions / +45s,  2pp== 3x rep / +90s"
     document.getElementById('ultimate_text').innerHTML = ult_text
 
     $('.difficulty').click(function() {
