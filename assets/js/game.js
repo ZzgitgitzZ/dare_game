@@ -74,8 +74,8 @@ function get_dare(){
 
 function start_timer(max_time=1){
     if (max_time>0){
-        rr = 1+rand(3+1)
-        max_time = 15*rr + used_points*45
+        rr = 1+rand(2+1)
+        max_time = 10*rr + used_points*45
         reps = 3*rr*(used_points+1)
     } else{ 
         reps=0
