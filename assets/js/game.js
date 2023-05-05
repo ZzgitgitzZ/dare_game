@@ -107,6 +107,7 @@ $(document).ready(function(){ //goes off after page first loaded
     ult_text = ult_text + "repetitions / timer randomly between == [3,6,9] / [10s,20s,30s]\n"
     ult_text = ult_text + "you press 'add 1 pp...' after finishing dare (if dare says so), can later use it on your next dare \n"
     ult_text = ult_text + "1pp == 2x repetitions / +45s,  2pp== 3x rep / +90s"
+    ult_text = ult_text + "the four cards 'colors' represent difficulty from left to right in ascending order."
     document.getElementById('ultimate_text').innerHTML = ult_text
 
     $('.difficulty').click(function() {
